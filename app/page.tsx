@@ -17,12 +17,12 @@ export default async function Home() {
     <>
       <Navbar recordMap={recordMap}/>
       <div className="flex min-h-screen">
-        {/* 左侧部分 - 3/4 宽度 */}
+        {/* 左侧部分 - 4/5 宽度 */}
         <div className="w-4/5 p-8 pb-20 sm:p-20">
           <MainPage recordMap={recordMap}/>
         </div>
 
-        {/* 右侧部分 - 1/4 宽度 */}
+        {/* 右侧部分 - 1/5 宽度 */}
         <div className="w-1/5 p-8 pb-20 sm:p-20 border-l">
           {/* 在这里添加右侧内容 */}
           <div className="h-full">

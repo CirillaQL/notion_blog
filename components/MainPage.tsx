@@ -1,9 +1,7 @@
 'use client'
-import * as notion from '../lib/notion'
-import Link from 'next/link'
 import { type ExtendedRecordMap } from 'notion-types'
 import { NotionPage } from "./NotionPage";
-import { rootDomain } from "@/lib/config";
+
 
 
 interface MainPageProps {

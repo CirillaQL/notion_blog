@@ -13,10 +13,6 @@ import {
 } from "@/components/ui/sheet"
 import { Menu } from "lucide-react"
 
-interface NavbarProps {
-  recordMap: ExtendedRecordMap
-}
-
 export default function Navbar({ recordMap }: { recordMap: ExtendedRecordMap }) {
   const pathname = usePathname()
 

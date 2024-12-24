@@ -7,4 +7,6 @@ export const isDev =
 
 export const port = process.env.PORT || 3000
 
-export const rootDomain = isDev ? `localhost:${port}` : null
+export const rootDomain = isDev ? `localhost:${port}` : "https://eduardoqian.com"
+
+export const googleAnalyticsId = 'G-VTS86D5FWQ'

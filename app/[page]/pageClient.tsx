@@ -2,12 +2,10 @@
 import { type ExtendedRecordMap } from 'notion-types'
 import { NotionPage } from "../../components/NotionPage";
 import Navbar from '@/components/Navbar';
+import { rootNotionPageId, rootDomain } from '@/lib/config';
 
-interface PageClientProps {
-    recordMap: ExtendedRecordMap
-}
 
-export default function PageClient({recordMap}: PageClientProps) {
+export default function PageClient({ recordMap }: { recordMap: ExtendedRecordMap }) {
     return (
         <>
           <Navbar recordMap={recordMap} />
@@ -15,8 +13,8 @@ export default function PageClient({recordMap}: PageClientProps) {
             <div className="p-8 pb-20 sm:p-20">
                 <NotionPage
                 recordMap={recordMap}
-                rootDomain="localhost:3000"
-                rootPageId="15ff911a4343809c9c82f0223e202809"
+                rootDomain={rootDomain}
+                rootPageId={rootNotionPageId}
                 />
             </div>
           </div>

@@ -1,17 +1,19 @@
 
 import MainPage from "@/components/MainPage";
-
+import { rootNotionPageId } from '../lib/config'
 import * as notion from '../lib/notion'
 import Navbar from "@/components/Navbar";
 
 async function getData() {
-  const pageId = '15ff911a4343809c9c82f0223e202809'
+  const pageId = rootNotionPageId
   const recordMap = await notion.getPage(pageId)
   return recordMap
 }
 
 export default async function Home() {
   const recordMap = await getData()
+
+  console.log(recordMap)
 
   return (
     <>

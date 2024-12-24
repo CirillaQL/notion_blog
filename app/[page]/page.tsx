@@ -1,5 +1,4 @@
 // app/[page]/page.tsx
-import { type ExtendedRecordMap } from 'notion-types'
 import * as notion from '../../lib/notion'
 import  PageClient  from './pageClient'
 

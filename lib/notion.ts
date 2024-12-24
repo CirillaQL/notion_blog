@@ -10,3 +10,13 @@ export async function getPage(pageId: string): Promise<ExtendedRecordMap> {
 
   return recordMap
 }
+
+export const defaultMapPageUrl = (rootPageId?: string) => (pageId: string) => {
+  pageId = (pageId || '').replaceAll('-', '')
+
+  if (rootPageId && pageId === rootPageId) {
+    return '/'
+  } else {
+    return `/${pageId}`
+  }
+}

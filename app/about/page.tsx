@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa'
 
 export default function About() {
